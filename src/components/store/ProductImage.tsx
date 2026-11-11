@@ -9,9 +9,9 @@ export function ProductImage({
   className,
   eager = false,
 }: {
-  src?: string;
+  src?: string | undefined;
   alt: string;
-  className?: string;
+  className?: string | undefined;
   eager?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
